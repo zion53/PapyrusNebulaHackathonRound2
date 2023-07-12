@@ -54,7 +54,7 @@ This is divided into two parts the frontend and backend.The compulsory **Resume 
 4. Once the Server is active, feel free to use      Postman or any other service for testing using
    "http://localhost:5000/api/resume"
 
-   **note:** Api documenteation is specifiend inside backend folder.
+   **note:** Api documentation is specified inside backend folder.
 
 
 **Note**:
@@ -66,7 +66,7 @@ This is divided into two parts the frontend and backend.The compulsory **Resume 
     ```shell
     cd frontend
 
-2. When in frontenf folder run command:
+2. When in frontend folder run command:
 
     ```shell
     npm install
