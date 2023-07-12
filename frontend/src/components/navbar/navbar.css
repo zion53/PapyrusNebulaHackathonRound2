@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Fira+Sans+Extra+Condensed:wght@600&family=Mulish:ital,wght@0,200;0,300;0,600;1,600&display=swap');
+.navBar{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #283e4a;
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4vh;
+}
+.navHeadingcontd{
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.55rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: middle;
+}
+.navHeading{
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 0.55rem;
+    font-size: 2rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: middle;
+}

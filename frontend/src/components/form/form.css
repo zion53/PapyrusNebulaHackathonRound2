@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Montserrat&family=Open+Sans&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.formHeading {
+  position: relative;
+  width: 80vw;
+  margin-bottom: 2%;
+  font-weight: 600;
+  font-size: 4vh;
+  font-family: "Montserrat";
+}
+
+.templateEnd {
+  width: 90vw;
+  overflow-x: hidden;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  justify-self: center;
+  align-self: center;
+  border: 0.4px solid rgb(207, 201, 201);
+}
+
+.innertemplateEnd {
+  width: 60vw;
+  display: flex;
+  margin-bottom: 5%;
+  justify-self: center;
+  align-self: center;
+  border: 0.4px dotted rgb(207, 201, 201);
+  margin-top: 2%;
+}
+
+.formContainer {
+  font-family: "Asul";
+  display: flex;
+  flex-direction: column;
+  margin: 7% 5% 10% 8%;
+  gap: 2vw;
+}
+
+.inputfield {
+  margin: 2vh;
+  font-size: 1.4vw;
+  font-family: "Open Sans";
+  border: 1.5px solid rgba(167, 160, 160, 0.598);
+  border-radius: 5px;
+  height: 3vw;
+  width: 30vw;
+  padding: 0px 5px 0px 5px;
+}
+
+.inputfield-textarea {
+  margin: 2%;
+  font-size: 1.6vw;
+  font-family: "Open Sans";
+  border: 1.5px solid rgba(167, 160, 160, 0.598);
+  border-radius: 5px;
+  height: fit-content;
+  width: 30vw;
+  padding: 0px 5px 0px 5px;
+}
+
+label {
+  margin-left: 2.4%;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.errormessage {
+  font-size: small;
+  color: red;
+  margin-top: -1%;
+  margin-left: 9%;
+}
+
+.addSkillbtn,
+.addEdubtn,.addExpbtn,.addAchbtn  {
+  font-size: max(1.7vh,1.2vw);
+  width: fit-content;
+  padding: 0.5% 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #283e4a;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.addSkillbtn,.addEdubtn,.addExpbtn,.addAchbtn {
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.removeEdubtn, .removeExpbtn, .removeSkillbtn,.removeAchbtn,.removeSkillbtn {
+  font-size: medium;
+  width: fit-content;
+  max-height: 50px;
+  padding: 0.5% 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #283e4a;
+  color: #fff;
+  margin-top: 3%;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.dynamicFields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.submitbtn {
+  font-size: max(2vh,1.5vw);
+  width: fit-content;
+  padding: 1% 2.5%;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #283e4a;
+  color: #fff;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sectionContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 2vw; /* Adjust the gap between the fields using viewport width (vw) */
+  justify-content: center;
+}
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+}
+.waveform {
+  --uib-size: 40px;
+  --uib-speed: 1s;
+  --uib-color: black;
+  --uib-line-weight: 3.5px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--uib-size);
+  height: calc(var(--uib-size) * 0.9);
+}
+
+.waveform__bar {
+  width: var(--uib-line-weight);
+  height: 100%;
+  background-color: var(--uib-color);
+}
+
+.waveform__bar:nth-child(1) {
+  animation: grow var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * -0.45) infinite;
+}
+
+.waveform__bar:nth-child(2) {
+  animation: grow var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * -0.3) infinite;
+}
+
+.waveform__bar:nth-child(3) {
+  animation: grow var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * -0.15) infinite;
+}
+
+.waveform__bar:nth-child(4) {
+  animation: grow var(--uib-speed) ease-in-out infinite;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popupLoaderContainer {
+  display: flex;
+  background-color: #fff;
+  padding: 5vw;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.popupContainer {
+  display: flex;
+  border-radius: 13px;
+  padding-top: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 4vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; 
+}
+.popupContainer p {
+  margin-bottom: 2vh;
+}
+.popupContainer button {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 2vh 4vw;
+  background-color: #007bff;
+  
+}
+.popupCross {
+  height: 4vh;
+  cursor: pointer;
+}
+.closeIcon{
+  position: relative;
+  display: flex;
+  padding-bottom: 30px;
+  flex-direction:row-reverse;
+  height: 30px;
+  width: 100%;
+}
